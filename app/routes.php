@@ -17,6 +17,11 @@ Route::get('/', function()
 	//will likely change to a homepage, this is just a placeholder for now
 });
 
+Route::get('mysql-test', function() {
+	 $results = DB::select('SHOW DATABASES;');
+	 print_r($results);
+});
+
 /*
 
 Route::get('/cardsdatabase', function()
