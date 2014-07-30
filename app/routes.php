@@ -17,6 +17,8 @@ Route::get('/', function()
 	//will likely change to a homepage, this is just a placeholder for now
 });
 
+/*
+
 Route::get('/cardsdatabase', function()
 {
 	return View::make('database');
@@ -35,4 +37,4 @@ Route::get('/deckviewer', function(integer)
 Route::get('/deckbuilder', function()
 {
 	return View::make('deckbuilder');
-});
+});*/
