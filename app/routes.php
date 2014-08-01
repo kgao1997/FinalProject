@@ -1,16 +1,3 @@
-<?php
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 Route::get('/', function()
 {
 	return View::make('master');
@@ -21,6 +8,23 @@ Route::get('mysql-test', function() {
 	 $results = DB::select('SHOW DATABASES;');
 	 print_r($results);
 });
+
+/*
+Route::get('main', function()
+{
+	return View::make('main');
+});
+
+Route::get('cardCatalog', function()
+{
+	return View::make('cardCatalog');
+});
+
+Route::get('deckBuilder', function()
+{
+	return View::make('deckBuilder');
+});
+*/
 
 /*
 
