@@ -1,4 +1,5 @@
-  <html>
+<!doctype HTML> 
+ <html>
     <meta charset = utf-8>
 	<title>
 	  @yield('title','Magic Deck Builder')
@@ -11,5 +12,4 @@
 	</body>
 	
 	
-
-  </html>
+   </html>
