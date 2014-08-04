@@ -37,6 +37,21 @@ Route::get('deckBuilder', function()
 	return View::make('deckBuilder');
 });
 
+Route::get('testCard', function()
+{
+// Create a new Card
+	$JTMS = new Card();
+// Set Card Info
+	$JTMS->cardName = 'Jace, the Mind Sculptor';
+	$JTMS->manaCost = '2UU';
+	$JTMS->cardText = 'You win the game';
+// Save Card
+	$JTMS -> save();
+	
+	return 'A new card has been added!';
+});
+	
+
 /*
 
 Route::get('/cardsdatabase', function()
