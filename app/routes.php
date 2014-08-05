@@ -46,7 +46,7 @@ Route::get('add_card', function()
 Route::post('add_card', function()
 {
 	$card = new Card();
-	$card->fill(Input::all());
+	$card->fill(Input::except('_token'));
 	$card->save();
 	return ('a new card has been added');
 });

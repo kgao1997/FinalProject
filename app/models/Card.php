@@ -1,6 +1,7 @@
 <?php
 
 class Card extends Eloquent  {
+  protected $fillable = array( 'cardName', 'manaCost', 'cardText');
   /*protected $fillable = array( 'Color', 'Type', 'Set');
   public $cardText = "Default Card Flavor Text";
   public $cardName = "Default Card Name";

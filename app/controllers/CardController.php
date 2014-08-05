@@ -24,7 +24,7 @@
   public function postSearch()
   {
   $query = Input::get('query');
-  $cards = Cards::search($query);
+  $cards = Card::search($query);
   $results = ' ';
   foreach($cards as $card)
     {
