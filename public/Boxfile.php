@@ -4,7 +4,7 @@ global:
 web1:
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
-  name: application name
+  name: finalProject
   shared_writable_dirs:
     - /app/storage/cache
     - /app/storage/logs
