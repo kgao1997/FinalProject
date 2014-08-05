@@ -7,7 +7,7 @@
 @section('content')
   <h1> Card Catalog </h1>
   <p>
-	{{link_to('/cardcatalog', 'Card Catalog')}} </p>
+	{{link_to('/cardCatalog', 'Card Catalog')}} </p>
 	
   <h1> Deck Builder </h1>
   <p>

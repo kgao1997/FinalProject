@@ -29,16 +29,9 @@ Route::get('main', function()
 
 Route::get('/cardCatalog', 'CardController@viewCards');
 
-Route::get('searchCard', function()
-{
-	return View::make('searchCard');
-});
+Route::get('searchCard', 'CardController@getSearch');
 
-Route::post('searchCard', function()
-{
-	return View::make('cardCatalog')
-			->with('card', $cards);
-});
+Route::post('searchCard', 'CardController@postSearch');
 
 Route::get('deckBuilder', function()
 {
