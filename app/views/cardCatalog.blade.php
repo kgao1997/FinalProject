@@ -5,5 +5,7 @@
 @stop
 
 @section('content')
-  <p> cards list </p>
+
+	      
+
 @stop

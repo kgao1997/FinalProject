@@ -27,14 +27,35 @@ Route::get('main', function()
 	return View::make('main');
 });
 
-Route::get('cardCatalog', function()
+Route::get('/cardCatalog', 'CardController@viewCards');
+
+Route::get('searchCard', function()
 {
-	return View::make('cardCatalog');
+	return View::make('searchCard');
+});
+
+Route::post('searchCard', function()
+{
+	return View::make('cardCatalog')
+			->with('card', $cards);
 });
 
 Route::get('deckBuilder', function()
 {
 	return View::make('deckBuilder');
+});
+
+Route::get('add_card', function()
+{
+	return View::make('card_add');
+});
+
+Route::post('add_card', function()
+{
+	$card = new Card();
+	$card->fill(Input::all());
+	$card->save();
+	return ('a new card has been added');
 });
 
 Route::get('testCard', function()
