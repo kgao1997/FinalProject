@@ -13,6 +13,7 @@
 	{{Form::text('query')}}
 	{{Form::submit('Search!')}}
 	{{Form::close()}}
+//EasterEgg
 	
 	
 	
