@@ -24,7 +24,7 @@
   public function postSearch()
   {
   $query = Input::get('query');
-  $cards = Card::search($query);
+  $cards = DB::select('select * from cards where cardName like"'.$query.'"');
   $results = ' ';
   foreach($cards as $card)
     {
