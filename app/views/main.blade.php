@@ -13,5 +13,18 @@
   <p>
     {{link_to('/deckbuilder', 'Deck Builder')}}
   </p>
+
+  <h1>  Add Card </h1>
+  <p>
+    {{link_to('/addCard', 'Add Card')}}
+  </p>
+
+  <h1>  Delete Card </h1>
+  <p>
+    {{link_to('/deleteCard', 'Delete Card')}}
+  </p>
+
+  
+  
 @stop
   

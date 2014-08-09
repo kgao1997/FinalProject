@@ -32,6 +32,25 @@
     }
 	return $results;
   }
+
+  public function getDeleteCard()
+  {
+    return View::make('deleteCard');
+  }
+
+  public function postDeleteCard()
+  {
+    $query = Input::get('query');
+    $cards = DB::select('select * from cards where cardName like"'.$query.'"');
+    foreach($cards as $card)
+      {
+         $deleted = DB::query('delete * from cards where  cardName like "' .$query.'"', array(1));
+      }
+	echo 'these cards have been deleted';
+	echo $deleted;
+	
+	
+  }
+}
   
   
- }

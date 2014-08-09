@@ -43,6 +43,10 @@ Route::get('deckBuilder', function()
 	return View::make('deckBuilder');
 });
 
+Route::get('/deleteCard', 'CardController@getDeleteCard');
+
+Route::post('/deleteCard', 'CardController@postDeleteCard');
+
 Route::get('add_card', function()
 {
 	return View::make('card_add');
