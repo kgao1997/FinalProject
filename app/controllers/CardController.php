@@ -44,13 +44,11 @@
     $cards = DB::select('select * from cards where cardName like"'.$query.'"');
     foreach($cards as $card)
       {
-         $deleted = DB::query('delete * from cards where  cardName like "' .$query.'"', array(1));
+         DB::delete($card);
       }
-	echo 'these cards have been deleted';
-	echo $deleted;
+   }
 	
 	
-  }
 }
   
   
