@@ -44,7 +44,7 @@
     $cards = DB::select('select * from cards where cardName like"'.$query.'"');
     foreach($cards as $card)
       {
-         DB::delete($card);
+         DB::delete('card');
       }
    }
 	
