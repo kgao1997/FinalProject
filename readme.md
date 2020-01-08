@@ -1,4 +1,5 @@
 #Final Project for DWA 15, Summer of 2014. 
+#Interactive Magic Card database/dictionary. I think this was the year of Innistrad. 
 
 ## Laravel PHP Framework
 
