@@ -1,3 +1,5 @@
+#Final Project for DWA 15, Summer of 2014. 
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
